@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form Validation</title>
+    <link rel="stylesheet" href="./styleLogin.css">
+    <script src="./login.js" defer></script>
+</head>
+<body>
+    <div class="form-container">
+        <form method="post" action = "/" id="login-form" class="form">
+            <!-- Using inbuilt html attribute validations: required, minlength & maxlength.-->
+            <div>
+                <Label for="email">Email</Label>
+                <input type="email" name="email" id="email" placeholder="Email ID" required>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Password" required minlength="8" maxlength="16">
+            </div>
+            <button value="LOGIN" id="submit-btn">LOGIN</button>
+        </form>
+    
+        <p>Or, If you don't have an account</p>
+        <button id="sign-up-btn">SIGN UP</button>
+    </div>
+</body>
+</html>
